@@ -1,0 +1,10 @@
+main:
+  - title: "Blog"
+    url: /blog/
+  - title: "Projects"
+    url: /portfolio/
+  - title: "CV"
+    url: /resume/
+  - title: "Search"
+    url: /search/
+sidebar-travel:
