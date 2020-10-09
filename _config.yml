@@ -113,10 +113,10 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: &githubUrl https://github.com/leoguillaume'
+      url: &githubUrl 'https://github.com/leoguillaume'
     - label: 'LinkedIn'
       icon: 'fab fa-fw fa-linkedin'
-      url: &linkedinUrl 'https:linkedin.com/in/léo-guillaume-578bb9141/'
+      url: &linkedinUrl 'https://linkedin.com/in/léo-guillaume-578bb9141/'
 
 # Site Footer
 footer:
