@@ -2,7 +2,7 @@
 main:
   - title: 'Blog'
     url: /posts/
-  - title: 'Portefolio'
-    url: '/portefolio'
-  - title: 'CV'
-    url: '/assets/pdf/resume2020.pdf"'
+  - title: 'Portfolio'
+    url: '/projects'
+  - title: 'Curriculum'
+    url: '/assets/pdf/resume2020.pdf'
