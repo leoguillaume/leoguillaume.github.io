@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "Portfolio and projects"
-permalink: /portfolio/
+permalink: /projects/
 author_profile: true
 ---
 <div class="grid__wrapper">
