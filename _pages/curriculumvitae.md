@@ -1,6 +1,6 @@
 ---
-permalink: /curriculumvitae/
-title: "CV_test"
+layout: archive
+title: "Resume"
 header:
 categories:
   - Markup
