@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: single
 title: "Data analysis of a medical survey"
 excerpt: "basic data analysis of a medical survey"
 header:
