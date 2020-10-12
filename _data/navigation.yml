@@ -3,6 +3,6 @@ main:
   - title: 'Blog'
     url: /posts/
   - title: 'Portfolio'
-    url: '/projects'
+    url: /projects
   - title: 'Curriculum'
-    url: '/assets/pdf/resume2020.pdf'
+    url: /assets/pdf/resume2020.pdf
