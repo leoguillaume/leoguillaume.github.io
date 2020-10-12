@@ -39,7 +39,7 @@ data = data.reindex(sorted(data.columns), axis=1)
 Then the age column was polluted by 'ans' strings (years old in French). Moreover, the patients came from 3 different care centers (Nantes, Bordeaux and Strasbourg) and there were different syntaxes for each.
 
 ```python
-data.âge = data['âge'].astype(dtype = 'str').map(lambda x: x.strip().rstrip('ans').strip()).astype(dtype = 'int')
+data['âge'] = data['âge'].astype(dtype = 'str').map(lambda x: x.strip().rstrip('ans').strip()).astype(dtype = 'int')
 
 def care_center_cleaning(x):
     x = x.strip().lower()
@@ -68,8 +68,8 @@ data_1 = data_1.replace('non', 1)
 data_1= data_1.replace('partiellement', 1)
 data_1 = data_1.replace('NA', 0)
 
-v = df2.iloc[:,:104].groupby(df2.Sexe).count().sum(axis = 1).sort_index()
-v_sexe = (df2.Sexe.value_counts() * 104).sort_index()
+v = data_1.iloc[:,:104].groupby(data_1.Sexe).count().sum(axis = 1).sort_index()
+v_sexe = (data_1.Sexe.value_counts() * 104).sort_index()
 
 plt.figure()
 
@@ -81,3 +81,4 @@ plt.gca().set_ylim([0, values.max() + 500])
 plt.xlabel('Sexe')
 plt.ylabel('Nombre de réponses')
 plt.show()
+```
