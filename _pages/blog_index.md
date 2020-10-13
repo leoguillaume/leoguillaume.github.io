@@ -3,7 +3,7 @@ layout: archive
 title: "Posts by topic"
 permalink: /posts/
 author_profile: true
-layouts_gallery:
+gallery:
   - url: https://leoguillaume.github.io/ml
     image_path: /assets/images/ml-logo.png
     title: 'Machine Learning'
