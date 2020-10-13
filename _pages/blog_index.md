@@ -16,6 +16,5 @@ layouts_gallery:
 - url: https://leoguillaume.github.io/data-analysis
   image_path: /assets/images/da-logo.png
   title: 'Data Analysis'
-
 ---
 {% include gallery id="layouts_gallery" class="full" layout="half"%}
