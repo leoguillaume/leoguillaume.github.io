@@ -8,8 +8,8 @@ layouts_gallery:
   image_path: /assets/images/ml-logo.png
   title: 'Machine Learning'
   - url: https://leoguillaume.github.io/nlp
-    image_path: /assets/images/nlp-logo.png
-    title: 'NLP'
+  image_path: /assets/images/nlp-logo.png
+  title: 'NLP'
 - url: https://leoguillaume.github.io/deep
   image_path: /assets/images/deep-logo.png
   title: 'Deep Learning'
