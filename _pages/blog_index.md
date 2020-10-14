@@ -3,6 +3,7 @@ layout: archive
 title: "Posts by topic"
 permalink: /posts/
 author_profile: true
+breadcrumbs: true
 gallery:
   - url: https://leoguillaume.github.io/ml
     image_path: /assets/images/ml-logo.png
