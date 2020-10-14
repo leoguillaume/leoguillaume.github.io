@@ -1,8 +1,8 @@
 ---
 layout: tag
 title: "Machine Learning Posts"
-permalink: /posts/machine-learnings
+permalink: /posts/data-analysis
 values:
       author_profile: true
 ---
-# Machine Learning
+# Data Analysis

@@ -5,10 +5,11 @@ excerpt: "basic data analysis of a medical survey"
 categories:
   - Data analysis
 tags:
-  - data analysis
+  - data-analysis
   - python
 read_time: true
 author_profile: true
+toc: true
 share: true
 ---
 My friend Sarah in PhD of pharmacy at the University of Nantes (France) needed a helping hand analyzing data from a survey she conducted. The survey questioned transplant patients with cystic fibrosis to find out what questions they have to ask themselves in order to gain a better understanding of their concerns.
