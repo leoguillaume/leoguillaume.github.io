@@ -1,9 +1,9 @@
 ---
 layout: single
 title: "Data analysis of a medical survey"
-excerpt: "basic data analysis of a medical survey"
+excerpt: "Basic data analysis of a medical survey"
 categories:
-  - Data analysis
+  - data analysis
 tags:
   - data-analysis
   - python
