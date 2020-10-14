@@ -6,4 +6,3 @@ taxonomy: data analysis
 values:
       author_profile: true
 ---
-# Data Analysis

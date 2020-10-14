@@ -1,8 +1,8 @@
 ---
-layout: tag
-title: "Machine Learning Posts"
+layout: category
+title: "Natural Language Processing"
 permalink: /posts/nlp
+taxonomy: nlp
 values:
       author_profile: true
 ---
-# Natural Language Processing

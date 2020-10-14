@@ -4,9 +4,6 @@ title: "Data analysis of a medical survey"
 excerpt: "Basic data analysis of a medical survey"
 categories:
   - data analysis
-tags:
-  - data-analysis
-  - python
 read_time: true
 author_profile: true
 toc: true

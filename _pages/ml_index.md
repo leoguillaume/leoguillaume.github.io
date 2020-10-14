@@ -1,8 +1,8 @@
 ---
-layout: tag
-title: "Machine Learning Posts"
-permalink: /posts/machine-learning
+layout: category
+title: "Machine Learning"
+permalink: /posts/machine-learning/
+taxonomy: machine learning
 values:
       author_profile: true
 ---
-# Machine Learning

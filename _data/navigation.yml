@@ -1,8 +1,8 @@
 # main links
 main:
   - title: 'Blog'
-    url: /posts
+    url: /posts/
   - title: 'Portfolio'
-    url: /projects
+    url: /projects/
   - title: 'Curriculum'
     url: /assets/pdf/resume2020.pdf
