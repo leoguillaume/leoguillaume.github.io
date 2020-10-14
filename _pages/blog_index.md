@@ -5,16 +5,16 @@ permalink: /posts/
 author_profile: true
 breadcrumbs: true
 gallery:
-  - url: https://leoguillaume.github.io/ml
+  - url: https://leoguillaume.github.io/posts/ml
     image_path: /assets/images/ml-logo.png
     title: 'Machine Learning'
-  - url: https://leoguillaume.github.io/nlp
+  - url: https://leoguillaume.github.io/posts/nlp
     image_path: /assets/images/nlp-logo.png
     title: 'NLP'
-  - url: https://leoguillaume.github.io/deep
+  - url: https://leoguillaume.github.io/posts/deep
     image_path: /assets/images/deep-logo.png
     title: 'Deep Learning'
-  - url: https://leoguillaume.github.io/data-analysis
+  - url: https://leoguillaume.github.io/posts/data-analysis
     image_path: /assets/images/da-logo.png
     title: 'Data Analysis'
 ---
