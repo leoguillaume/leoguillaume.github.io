@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Posts by topic"
+title: "Posts by category"
 permalink: /posts/
 author_profile: true
 breadcrumbs: true
@@ -18,4 +18,6 @@ gallery:
     image_path: /assets/images/da-logo.png
     title: 'Data Analysis'
 ---
+Find a post by category.
+
 {% include gallery %}
