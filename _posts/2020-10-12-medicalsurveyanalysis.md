@@ -44,7 +44,9 @@ By replacing these values with one or zero digit, I can easily add them together
 | oui      | NA                | oui           |     | oui  | Femme |
 | non, ... | partiellement, ... | non           |     | oui  | Homme |
 | NA     | oui, ...           | partiellement |     | NA  | Femme |
+
 <span style='font-size:30px;'>&#8681;</span>
+
 | Q1       | Q2                 | Q3            | ... | Q103 | Sexe  |
 |----------|--------------------|---------------|-----|------|-------|
 | 1    | 0                | 1          |     | 1 | Femme |
@@ -74,7 +76,7 @@ plt.xlabel('Sexe')
 plt.ylabel('Nombre de réponses')
 plt.show()
 ```
-![]('/assets/images/2020-10-12-chart_1.png')
+![](https://github.com/leoguillaume/leoguillaume.github.io/tree/master/assets/images/2020-10-12-chart_1.png)
 
 ## Per heath care center
 ```python
@@ -91,7 +93,7 @@ plt.xlabel('Centre de suivi')
 plt.ylabel('Nombre de réponses')
 plt.show()
 ```
-![]('/assets/images/2020-10-12-chart_2.png')
+![](https://github.com/leoguillaume/leoguillaume.github.io/tree/master/assets/images/2020-10-12-chart_2.png)
 
 ## Per age
 
