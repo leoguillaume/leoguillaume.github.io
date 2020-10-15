@@ -115,7 +115,7 @@ plt.show()
 
 # Answer rate per question
 
-First of all, I remove comments to conserve only `yes`, `no` or `partially` in answers.
+First of all, I remove comments to keep only `yes`, `no` or `partially` in the answers.
 
 ```python
 df2 = df.copy()
@@ -146,10 +146,9 @@ for i in range(104):
     plt.ylabel(None)
     plt.yticks([])
     plt.savefig(os.path.join(output_path, df2.columns[i][:3].strip() + '.png')) # 'question_number.png'
-
+```
 Example:
 ![image](https://leoguillaume.github.io/assets/images/2020-10-12-chart_4.png){:height="50%" width="50%"}
-```
 
 ## Per heath care center
 
