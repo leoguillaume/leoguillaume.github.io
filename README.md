@@ -3,6 +3,8 @@ My personal data science blog and portfolio: [leoguillaume.github.io](https://le
 # Icon credits
 Icons from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> made by:
 - <a href="https://www.flaticon.com/free-icon/law_1781217" title="itim2101">itim2101</a>
-- <a href="https://www.flaticon.com/authors/becris" title="Becris">Becris</a> (deep)
-- <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> (nlp
-- <a href="https://www.flaticon.com/free-icon/machine-learning_3043397?term=machine%20learning&page=1&position=15" title="ultimatearm">ultimatearm</a> (ml)
+- <a href="https://www.flaticon.com/authors/ultimatearm" title="ultimatearm">ultimatearm</a>
+- <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a>
+- <a href="https://www.flaticon.com/authors/phatplus" title="phatplus">phatplus</a>
+- <a href="https://www.flaticon.com/authors/ultimatearm" title="ultimatearm">ultimatearm</a>
+- <a href="https://www.flaticon.com/authors/becris" title="Becris">Becris</a>
