@@ -6,7 +6,7 @@ author_profile: true
 breadcrumbs: true
 gallery:
   - url: https://leoguillaume.github.io/posts/machine-learning
-    image_path: /assets/images/machine-logo.png
+    image_path: /assets/images/machine-learning-logo.png
     title: 'Machine Learning'
   - url: https://leoguillaume.github.io/posts/nlp
     image_path: /assets/images/nlp-logo.png
