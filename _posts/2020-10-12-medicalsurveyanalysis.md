@@ -94,7 +94,7 @@ plt.xlabel('Centre de suivi')
 plt.ylabel('Nombre de réponses')
 plt.show()
 ```
-![chart](https://leoguillaume.github.io/assets/images/2020-10-12-chart_2.png){:height="100%" width="100%"}
+![image](https://leoguillaume.github.io/assets/images/2020-10-12-chart_2.png){:height="100%" width="100%"}
 
 ## Per age
 
@@ -110,10 +110,10 @@ plt.ylabel('%')
 plt.show()
 ```
 
-<img src: "https:leoguillaume.github.io/tree/master/assets/images/2020-10-12-chart_2.png">)
+<img src: "https://leoguillaume.github.io/assets/images/2020-10-12-chart_3.png"</img>
 
 
 # Answer rate per question
 
-## Per sexe
+## Per gender
 ## Per heath care center
