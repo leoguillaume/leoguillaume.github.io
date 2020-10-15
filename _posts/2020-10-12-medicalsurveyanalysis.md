@@ -8,6 +8,7 @@ read_time: true
 author_profile: true
 toc: true
 share: true
+comments: true
 ---
 My friend Sarah in PhD of pharmacy at the University of Nantes (France) needed a helping hand to create data visualisations from a survey she conducted. The survey questioned transplant patients with cystic fibrosis to find out what questions they have to ask themselves in order to gain a better understanding of their concerns.
 
@@ -39,7 +40,7 @@ the response rate, I have to calculate the number of "yes", "no" and "partially"
 By replacing these values with one or zero digit, I can easily add them together.
 
 
-| Q1       | Q2                 | Q3            | ... | Q103 | Sexe  |
+| Q0       | Q1                 | Q2            | ... | Q103 | Sexe  |
 |----------|--------------------|---------------|-----|------|-------|
 | oui      | NA                | oui           |     | oui  | Femme |
 | non, ... | partiellement, ... | non           |     | oui  | Homme |
@@ -47,7 +48,7 @@ By replacing these values with one or zero digit, I can easily add them together
 
 <span style='font-size:30px;'>&#8681;</span>
 
-| Q1       | Q2                 | Q3            | ... | Q103 | Sexe  |
+| Q0      | Q1                | Q2            | ... | Q103 | Sexe  |
 |----------|--------------------|---------------|-----|------|-------|
 | 1    | 0                | 1          |     | 1 | Femme |
 | 1| 1 | 1          |     | 1  | Homme |
@@ -81,12 +82,12 @@ plt.show()
 ## Per heath care center
 ```python
 v = df1.iloc[:,:104].groupby(df1['Centre de soin']).sum().sum(axis = 1).sort_index()
-v_sexe = (df1['Centre de soin'].value_counts() * 104).sort_index()
+v_center = (df1['Centre de soin'].value_counts() * 104).sort_index()
 
 plt.figure()
 values.plot(kind='bar')
 for i in range(2):
-    plt.text(x = i - 0.1, y = v[i] + 100, s = '{:.2f}%'.format(v[i] / v_sexe[i]))
+    plt.text(x = i - 0.1, y = v[i] + 100, s = '{:.2f}%'.format(v[i] / v_center[i]))
 plt.title('Réponses par centre de suivi', weight = 'bold')
 plt.gca().set_ylim([0, values.max() + 500])
 plt.xlabel('Centre de suivi')
@@ -96,6 +97,21 @@ plt.show()
 ![](https://github.com/leoguillaume/leoguillaume.github.io/tree/master/assets/images/2020-10-12-chart_2.png)
 
 ## Per age
+
+```python
+df1['age_cut'] = pd.cut(df1.âge, 4)
+
+plt.figure()
+v_age = df2['age_cut'].value_counts().sort_index()
+df1.iloc[:,:104].groupby(df2['age_cut']).count().sum(axis = 1).divide(v_age).plot(kind = "bar")
+plt.title('Taux de réponse par tranche d\'âge', weight = 'bold')
+plt.xlabel('âge')
+plt.ylabel('%')
+plt.show()
+```
+
+![](https://github.com/leoguillaume/leoguillaume.github.io/tree/master/assets/images/2020-10-12-chart_2.png)
+
 
 # Answer rate per question
 
