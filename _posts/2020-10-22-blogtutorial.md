@@ -18,7 +18,7 @@ Creating a blog, like any website, it generaly goes with writing scripts in HTML
 
 * **[Github Pages](https://pages.github.com/)**
 
-"Hosted directly from your GitHub repository. Just edit, push, and your changes are live." this is how Github Pages defines it. Github Pages is a feature of Github that allows to host a website from a Github repository, on **github_username.github.io** url. Storage space is limited but more than enough for a blog and Github Pages has two major advantages: hosting is free and works on the basis of a Github repository. The changes you push on your repository will be displayed on your site, which is really handy!
+*"Hosted directly from your GitHub repository. Just edit, push, and your changes are live."* this is how Github Pages defines it. Github Pages is a feature of Github that allows to host a website from a Github repository, on *github_username.github.io* url. Storage space is limited but more than enough for a blog and Github Pages has two major advantages: hosting is free and works on the basis of a Github repository. The changes you push on your repository will be displayed on your site, which is really handy!
 
 * **[Jekyll](https://jekyllrb.com/)**
 
@@ -44,7 +44,7 @@ Then import [Minimal Mistake repository](https://github.com/mmistakes/minimal-mi
 
 ![image](https://leoguillaume.github.io/assets/images/2020-22-10-blogtutorial/screenshot-3.png){:height="50%" width="50%"}
 
-Load you can load your blog on any search engine (it's can take few minutes). Congratulations, you have just put your blog online :tada:!
+Now you can load your blog on any search engine (it's can take few minutes). Congratulations, you have just put your blog online :tada:!
 
 ![image](https://leoguillaume.github.io/assets/images/2020-22-10-blogtutorial/screenshot-4.png)
 
@@ -55,7 +55,7 @@ Ok cool but there's nothing on it yet. Now we're going to edit some files to giv
 First of all, we need to clone the repo in local (copy the url and add .git at the end) and to delete useless files.
 
 ```console
-git clone https://... <url>.git
+git clone https://<url>.git
 rm screenshot-layouts.png screenshot.png
 rm -rf test docs
 ```
@@ -64,13 +64,13 @@ rm -rf test docs
 
 :bulb: Remember to change the README.md file too!
 
-Now open your favorite text editor to modify `_config.yml` file. The file is the core of the blog, it gathers many informations about your blog. It's very clear because the signification of each tag is described.
+Now open your favorite text editor to modify `_config.yml`. The file is the core of the blog, it gathers many informations about your blog. It's very clear because the signification of each tag is described.
 
 ## The blog header
 
 You'll find blog header configurations in `Site Settings` block in `_config.yml` file.
 
-**Example for this blog:**
+*Example for this blog:*
 ```yml
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
@@ -86,15 +86,16 @@ baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "leoguillaume/leoguillaume.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/logo/logo.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+words_per_minute         : 100
 ```
 
 :bulb: Remember to store all assets (images, logos, pdf, videos, etc.) in the `assets` folder. You can create sub-folders by file type to better manage your assets.
 
 ## Author profile
 
-You'll find author profile configurations in `Site Author` block in `_config.yml` file. Icons in are provide by [Font Awesome](https://fontawesome.com/), feel free to explore their website to find the logo to any service.
+You'll find author profile configurations in `Site Author` block in `_config.yml`. Icons here are provide by [Font Awesome](https://fontawesome.com/), feel free to explore their website to find the class name of the logo to any service.
 
-**Example for this blog:**
+*Example for this blog:*
 ```yml
 # Site Author
 author:
@@ -126,9 +127,9 @@ author:
 
 ## Blog footer
 
-You'll find blog footer configurations in `Site Footer` block in `_config.yml` file.
-**Example for this blog:**
+You'll find blog footer configurations in `Site Footer` block in `_config.yml`.
 
+*Example for this blog:*
 ```yml
 # Site Footer
 footer:
