@@ -77,7 +77,7 @@ plt.xlabel('Sexe')
 plt.ylabel('Nombre de réponses')
 plt.show()
 ```
-![image](https://leoguillaume.github.io/assets/images/2020-10-12-chart_3.png){:height="50%" width="50%"}
+![image](https://leoguillaume.github.io/assets/images/2020-10-12-chart_1.png){:height="50%" width="50%"}
 
 ## Per heath care center
 ```python
