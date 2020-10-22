@@ -2,6 +2,8 @@
 layout: single
 title: "Generate multiple charts from a medical survey"
 excerpt: "Basic data visualisations of a medical survey"
+header :
+    teaser: https://leoguillaume.github.io/assets/images/2020-10-12-medicalsurveyanalysis/teaser.jpg
 categories:
   - data analysis
 read_time: true
@@ -77,7 +79,7 @@ plt.xlabel('Sexe')
 plt.ylabel('Nombre de réponses')
 plt.show()
 ```
-![image](https://leoguillaume.github.io/assets/images/2020-10-12-chart_1.png){:height="50%" width="50%"}
+![image](https://leoguillaume.github.io/assets/images/2020-10-12-medicalsurveyanalysis/2020-10-12-chart_1.png){:height="50%" width="50%"}
 
 ## Per heath care center
 ```python
@@ -94,7 +96,7 @@ plt.xlabel('Centre de suivi')
 plt.ylabel('Nombre de réponses')
 plt.show()
 ```
-![image](https://leoguillaume.github.io/assets/images/2020-10-12-chart_2.png){:height="50%" width="50%"}
+![image](https://leoguillaume.github.io/assets/images/2020-10-12-medicalsurveyanalysis/2020-10-12-chart_2.png){:height="50%" width="50%"}
 
 ## Per age
 
@@ -111,7 +113,7 @@ plt.xlabel('âge')
 plt.ylabel('%')
 plt.show()
 ```
-![image](https://leoguillaume.github.io/assets/images/2020-10-12-chart_3.png){:height="50%" width="50%"}
+![image](https://leoguillaume.github.io/assets/images/2020-10-12-medicalsurveyanalysis/2020-10-12-chart_3.png){:height="50%" width="50%"}
 
 # Answer rate per question
 
@@ -148,7 +150,7 @@ for i in range(104):
     plt.savefig(os.path.join(output_path, df2.columns[i][:3].strip() + '.png')) # 'question_number.png'
 ```
 Example:
-![image](https://leoguillaume.github.io/assets/images/2020-10-12-chart_4.png){:height="50%" width="50%"}
+![image](https://leoguillaume.github.io/assets/images/2020-10-12-medicalsurveyanalysis/2020-10-12-chart_4.png){:height="50%" width="50%"}
 
 ## Per heath care center
 
@@ -169,4 +171,4 @@ for i in range(104):
     plt.savefig(os.path.join(output_path, df2.columns[i][:3].strip() + '.png')) # 'question_number.png'
 ```
 Example:
-![image](https://leoguillaume.github.io/assets/images/2020-10-12-chart_5.png){:height="50%" width="50%"}
+![image](https://leoguillaume.github.io/assets/images/2020-10-12-medicalsurveyanalysis/2020-10-12-chart_5.png){:height="50%" width="50%"}

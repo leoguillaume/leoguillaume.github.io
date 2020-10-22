@@ -18,7 +18,9 @@ Creating a blog, like any website, it generaly goes with writing scripts in HTML
 
 * **[Github Pages](https://pages.github.com/)**
 
-*"Hosted directly from your GitHub repository. Just edit, push, and your changes are live."* this is how Github Pages defines it. Github Pages is a feature of Github that allows to host a website from a Github repository, on *github_username.github.io* url. Storage space is limited but more than enough for a blog and Github Pages has two major advantages: hosting is free and works on the basis of a Github repository. The changes you push on your repository will be displayed on your site, which is really handy!
+> *"Hosted directly from your GitHub repository. Just edit, push, and your changes are live."*
+
+This is how Github Pages defines it. Github Pages is a feature of Github that allows to host a website from a Github repository, on *github_username.github.io* url. Storage space is limited but more than enough for a blog and Github Pages has two major advantages: hosting is free and works on the basis of a Github repository. The changes you push on your repository will be displayed on your site, which is really handy!
 
 * **[Jekyll](https://jekyllrb.com/)**
 
@@ -86,7 +88,7 @@ baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "leoguillaume/leoguillaume.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/logo/logo.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-words_per_minute         : 100
+words_per_minute         : 150
 ```
 
 :bulb: Remember to store all assets (images, logos, pdf, videos, etc.) in the `assets` folder. You can create sub-folders by file type to better manage your assets.
@@ -146,4 +148,6 @@ The last change in `_config.yml` file is the comments account but we'll see abou
 
 You can save the modifications and push them on Github :rocket:.
 
-# Step 3: Pages and posts
+# Step 3: The home page
+# Step 4: Posts
+# Step 5: Blog structure
