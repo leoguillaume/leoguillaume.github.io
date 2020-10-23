@@ -26,7 +26,7 @@ Github Pages is a feature of Github that allows to host a website from a Github 
 
 * **[Jekyll](https://jekyllrb.com/)**
 
-Jekyll is a popular open source static site generator. It's developped on Ruby but don't worry, you won't need to know Ruby. Jekyll was developped by GitHub co-founder Tom Preston-Werner and therefore it's specially adapted to Github pages. Jekyll is very useful because is support many languages like HTML, Liquid and Markdown!
+Jekyll is a popular open source static site generator. It's developped on Ruby but don't worry, you won't need to know Ruby. Jekyll was developped by GitHub co-founder Tom Preston-Werner and therefore it's specially adapted to Github pages. Jekyll is very useful because it has a responsive design and is support many languages like HTML, Liquid and Markdown for your posts!
 
 * **[Minimal Mistakes template](https://github.com/mmistakes/minimal-mistakes)**
 
@@ -48,7 +48,7 @@ Then import [Minimal Mistake repository](https://github.com/mmistakes/minimal-mi
 
 ![image](https://leoguillaume.github.io/assets/images/2020-22-10-blogtutorial/screenshot-3.png){:height="50%" width="50%"}
 
-Now you can load your blog on any search engine (it's can take few minutes). Congratulations, you have just put your blog online :tada:!
+Now you can load your blog on any web browser (it's can take few minutes). Congratulations, you have just put your blog online :tada:!
 
 ![image](https://leoguillaume.github.io/assets/images/2020-22-10-blogtutorial/screenshot-4.png)
 
@@ -175,7 +175,7 @@ Now it's time to write your first post :raised_hands:! In Jekyll, you write blog
 mkdir _posts
 ```
 
-To create a post, add a file to your `_posts` directory with the following format: **`YEAR-MONTH-DAY-title.MARKUP`**. Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and MARKUP is the file extension representing the format used in the file (.html or .md).
+To create a post, add a file to your `_posts` directory with the following format: `YEAR-MONTH-DAY-title.MARKUP`. Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and MARKUP is the file extension representing the format used in the file (.html or .md).
 
 For example to create a new post today:
 ```console
@@ -187,8 +187,8 @@ At the head of your file text, there must be a front matter block like this:
 ```yml
 ---
 layout: single
-title: "How build a blog in few minutes for free ?"
-excerpt: "A tutorial to build a blog with Github Pages, Jekyll and Minimal Mistakes template"
+title: "My first post"
+excerpt: "Test post"
 categories:
     - web
 header:
@@ -201,14 +201,95 @@ comments: true
 ---
 ```
 
-**`layout`** is the template of your page, for post `single` layout is the most appropriate. *[See all layouts](https://mmistakes.github.io/minimal-mistakes/docs/layouts/)*
+`layout` is the template of your page, for post `single` layout is the most appropriate. *[See all layouts](https://mmistakes.github.io/minimal-mistakes/docs/layouts/)*
+`author_profile` display the side bar with author informations (defined in the config file).
+`toc` display the table of contents.
+`categories`, we'll see in the next section the interest of categorising the posts.
+`comments` display a comment box at the end of your post. To active this feature you must modify the `Site Settings` block in the `_config.yml` file and choice a comment service. Here I choice [Disqus](https://disqus.com/) because it's free, popular and easy to use. To get the shortname Disqus, you must configure your website on Disqus and go to the admin page.
 
-**`author_profile`** display the side bar with author informations.
+```yml
+comments:
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  disqus:
+    shortname            : 'https-leoguillaume-github-io' # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+  discourse:
+    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+  facebook:
+    # https://developers.facebook.com/docs/plugins/comments
+    appid                :
+    num_posts            : # 5 (default)
+    colorscheme          : # "light" (default), "dark"
+  utterances:
+    theme                : # "github-light" (default), "github-dark"
+    issue_term           : # "pathname" (default)
+  staticman:
+    branch               : # "master"
+    endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
 
-**`toc`** display the table of contents.
+```
 
-**`comments`** display a comment box at the end of your post. To active this feature you must modify the `Site Settingsk` block in the `_config.yml` file.  
-
+Now all you have to do is write your post. You'll see all your posts in the home page, under your welcome message, in a "Recent posts" box.
 
 :bulb: Remember all images and ressources you want to include must be save in the `assets` folder in the root of your project directory.
+
 # Step 5: Blog structure
+
+Great we have a homepage with a welcome message and a list of your posts, now we have to build the rest of the blog structure. If you load your site on a web browser you'll see the different tabs in the header of your blog. For the moment there is only one by default, "Quick-Start Guide". We will see how to create different pages to present your posts by category, your portfolio and your resume.  
+
+## Navigation
+
+[See documentation](https://mmistakes.github.io/minimal-mistakes/docs/navigation/)
+
+Organising the structure of your blog is very simple with Jekyll. In the `_data` directory, you'll find a `navigation.yml` file that will modifies the navigation tabs.
+
+You'll can customize like this:
+```yml
+main:
+  - title: 'Blog'
+    url: /posts/
+  - title: 'Portfolio'
+    url: /projects/
+  - title: 'Curriculum'
+    url: /assets/pdf/resume2020.pdf
+```
+The *Curriculum* tabs leads directly to the resume in PDF.
+
+## Pages
+
+You have created navigation tabs which leads to urls, now you have to build pages of these urls. The way of adding a page is to add an HTLM or Markdown files in the `_pages` directory.
+
+For example to create a index page which leads posts by category, you have to create a page file with `archive` layout. Each `archive` (gallery) box leads to a url. For the moment, we have only one post, in "web" category.
+
+```yml
+---
+layout: archive
+title: "Posts"
+permalink: /posts/
+author_profile: true
+breadcrumbs: true
+gallery:
+  - url: https://leoguillaume.github.io/posts/web
+    image_path: /assets/images/web-logo.png
+    title: 'Web'
+---
+```
+
+Then you have to create a page in `_pages` for each category with the corresponding taxonomy tag.
+
+For exemple `web_index.md`:
+```yml
+---
+layout: category
+title: "Web"
+permalink: /posts/web/
+taxonomy: web
+values:
+      author_profile: true
+---
+```
+
+Save the modifications and push them on Github :rocket:! Well done, you have now everything you need to create your blog.
+
+However, we have only seen here a very small part of the possibilities offered by Jekyll and Minimal Mistakes. All of them are easily modifiable and there are a lot of features to be discovered. Feel free to explore the documentations to explore all the possibilities and make your blog your own:
+- [Jekyll documentation](https://jekyllrb.com/docs/)
+- [Minimale Mistakes documentations](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/)
