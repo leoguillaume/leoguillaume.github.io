@@ -22,15 +22,15 @@ Creating a blog, like any website, it generaly goes with writing scripts in HTML
 
 > *"Hosted directly from your GitHub repository. Just edit, push, and your changes are live."*
 
-Github Pages is a feature of Github that allows to host a website from a Github repository, on *github_username.github.io* url. Storage space is limited but more than enough for a blog and Github Pages has two major advantages: hosting is free and works on the basis of a Github repository. The changes you push on your repository will be displayed on your site, which is really handy!
+Github Pages is a Github feature allowing users to host a website from a Github repository, with *github_username.github.io* url. Storage space is more than enough for a blog and Github Pages has two major advantages: hosting is free and works as a Github repository. The changes you push on your repository will be displayed on your website, which is really handy!
 
 * **[Jekyll](https://jekyllrb.com/)**
 
-Jekyll is a popular open source static site generator. It's developped on Ruby but don't worry, you won't need to know Ruby. Jekyll was developped by GitHub co-founder Tom Preston-Werner and therefore it's specially adapted to Github pages. Jekyll is very useful because it has a responsive design and is support many languages like HTML, Liquid and Markdown for your posts!
+Jekyll is a popular open source static website generator. It's Ruby based but don't worry, you won't need to know Ruby. Jekyll was developed by GitHub co-founder Tom Preston-Werner and therefore it's specially adapted to Github pages. Jekyll is very useful because it has a responsive design and it supports many languages as HTML, Liquid and Markdown for your posts!
 
 * **[Minimal Mistakes template](https://github.com/mmistakes/minimal-mistakes)**
 
-Finaly, a very practical feature of Jekyll is the use of templates. There are a lot of templates available, some of them are free and some are paid for. Here we'll use a very popular open source template: Minimale Mistake. It has the advantage of being sober, easy to use and to propose several skins.
+Finally, a very practical feature of Jekyll is the use of templates. There are a lot of templates available, free or not. Here we'll use a very popular open source template: Minimale Mistake. It has the advantage of being sober, user-friendly and to propose several skins.
 
 Now, let's get to the heart of the matter!
 
@@ -48,11 +48,11 @@ Then import [Minimal Mistake repository](https://github.com/mmistakes/minimal-mi
 
 ![image](https://leoguillaume.github.io/assets/images/2020-22-10-blogtutorial/screenshot-3.png){:height="50%" width="50%"}
 
-Now you can load your blog on any web browser (it's can take few minutes). Congratulations, you have just put your blog online :tada:!
+Now you can load your blog on any web browser (it can take few minutes). Congratulations, you have just put your blog online :tada:!
 
 ![image](https://leoguillaume.github.io/assets/images/2020-22-10-blogtutorial/screenshot-4.png)
 
-Ok cool but there's nothing on it yet. Now we're going to edit some files to give it a more personal touch.
+Great, but there's nothing on it yet. Now we're going to edit some files to give it a more personal touch.
 
 # Step 2: Configurations
 
@@ -97,7 +97,7 @@ words_per_minute         : 150
 
 ## Author profile
 
-You'll find author profile configurations in `Site Author` block in `_config.yml`. Icons here are provide by [Font Awesome](https://fontawesome.com/), feel free to explore their website to find the class name of the logo to any service.
+You'll find author profile configurations in `Site Author` block in `_config.yml`. Icons here are provided by [Font Awesome](https://fontawesome.com/), feel free to explore their website to find the class name of the logo to any service.
 
 *Example for this blog:*
 ```yml
@@ -163,7 +163,7 @@ author_profile: true
 <b>Welcome to my blog!</b>
 ```
 
-You can see at the start of the file a front matter block with `layout` and `author_profile`. This block is an essential part of Jekyll, it allows to defined the global variables for the page or the post. We'll see this in more detail in the next section dealing with posts.
+You can see at the start of the file a front matter block with `layout` and `author_profile`. This block is an essential part of Jekyll, it defines the global variables for the page or the post. We'll see this more in detail in the next section dealing with posts.
 
 # Step 4: Posts
 
@@ -205,7 +205,7 @@ comments: true
 `author_profile` display the side bar with author informations (defined in the config file).
 `toc` display the table of contents.
 `categories`, we'll see in the next section the interest of categorising the posts.
-`comments` display a comment box at the end of your post. To active this feature you must modify the `Site Settings` block in the `_config.yml` file and choice a comment service. Here I choice [Disqus](https://disqus.com/) because it's free, popular and easy to use. To get the shortname Disqus, you must configure your website on Disqus and go to the admin page.
+`comments` display a comment box at the end of your post. To activate this feature you must modify the `Site Settings` block in the `_config.yml` file and choice a comment service. Here I choose [Disqus](https://disqus.com/) because it's free, popular and user-frendly. To get the shortname Disqus, you must configure your website on Disqus and go to the admin page.
 
 ```yml
 comments:
@@ -290,6 +290,6 @@ values:
 
 Save the modifications and push them on Github :rocket:! Well done, you have now everything you need to create your blog.
 
-However, we have only seen here a very small part of the possibilities offered by Jekyll and Minimal Mistakes. All of them are easily modifiable and there are a lot of features to be discovered. Feel free to explore the documentations to explore all the possibilities and make your blog your own:
+The reader must be warned that this document is not exhaustive and that Jekyll and Minimal Mistakes offer many other possibilities. All of them are easily modifiable and there are a lot of features to be discovered. Feel free to explore the documentations to explore all the possibilities and make your blog more personal:
 - [Jekyll documentation](https://jekyllrb.com/docs/)
 - [Minimale Mistakes documentations](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/)
