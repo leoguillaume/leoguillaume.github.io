@@ -1,16 +1,18 @@
 ---
 layout: single
-title: "How create a blog in 5 minutes for free ?"
-excerpt: "A tutorial to create a blog with Github Pages, Jekyll and Minimal Mistakes template"
+title: "How build a blog in few minutes for free ?"
+excerpt: "A tutorial to build a blog with Github Pages, Jekyll and Minimal Mistakes template"
 categories:
   - web
+header:
+    teaser: https://leoguillaume.github.io/assets/images/2020-10-22-blogtutorial/teaser.jpeg
 read_time: true
 author_profile: true
 toc: true
 share: true
 comments: true
 ---
-*In this article, I describe how I create this blog. Thanks to [Mael Fabien](https://maelfabien.github.io/) for the idea and for his great blog which served as inspiration :raised_hands:.*
+*In this article, I describe how I build this blog. Thanks to [Mael Fabien](https://maelfabien.github.io/) for the idea and for his great blog which served as inspiration :raised_hands:.*
 
 # Some words of introduction...
 
@@ -28,7 +30,7 @@ Jekyll is a popular open source static site generator. It's developped on Ruby b
 
 * **[Minimal Mistakes template](https://github.com/mmistakes/minimal-mistakes)**
 
-Finaly, a very practical feature of Jekyll is the use of templates. There are a lot of templates available, some of them are free and some are paid for. Here we will use a very popular open source template: Minimale Mistake. It has the advantage of being sober, easy to use and to propose several skins.
+Finaly, a very practical feature of Jekyll is the use of templates. There are a lot of templates available, some of them are free and some are paid for. Here we'll use a very popular open source template: Minimale Mistake. It has the advantage of being sober, easy to use and to propose several skins.
 
 Now, let's get to the heart of the matter!
 
@@ -62,7 +64,7 @@ rm screenshot-layouts.png screenshot.png
 rm -rf test docs
 ```
 
-`test` and `docs` directory are documentation folders, if they are useless here, feel free to refer to them in the Minimal Mistakes repo. You will find all the features offered by the template.
+`test` and `docs` directory are documentation folders, if they are useless here, feel free to refer to them in the Minimal Mistakes repo. You'll find all the features offered by the template.
 
 :bulb: Remember to change the README.md file too!
 
@@ -149,5 +151,59 @@ The last change in `_config.yml` file is the comments account but we'll see abou
 You can save the modifications and push them on Github :rocket:.
 
 # Step 3: The home page
+
+The home page is contained in the `index.html` file. Open it and write a welcome message :pencil2:.
+
+```html
+---
+layout: home
+author_profile: true
+---
+
+<b>Welcome to my blog!</b>
+```
+
+You can see at the start of the file a front matter block with `layout` and `author_profile`. This block is an essential part of Jekyll, it allows to defined the global variables for the page or the post. We'll see this in more detail in the next section dealing with posts.
+
 # Step 4: Posts
+
+*[See the documentation](https://jekyllrb.com/docs/posts/)*
+
+Now it's time to write your first post :raised_hands:! In Jekyll, you write blog posts as text files (HTML or Markdown) and Jekyll provides everything you need to turn it into a blog. The first step is to create a `_posts` directory in the root of the project directory. This folder will storage your post files.
+
+```console
+mkdir _posts
+```
+
+To create a post, add a file to your `_posts` directory with the following format: **`YEAR-MONTH-DAY-title.MARKUP`**. Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and MARKUP is the file extension representing the format used in the file (.html or .md).
+
+For example to create a new post today:
+```console
+touch _posts/2020-22-10-myfirstpost.md
+```
+
+At the head of your file text, there must be a front matter block like this:
+
+```yml
+---
+layout: single
+title: "How build a blog in few minutes for free ?"
+excerpt: "A tutorial to build a blog with Github Pages, Jekyll and Minimal Mistakes template"
+categories:
+    - web
+header:
+      teaser: https://leoguillaume.github.io/assets/images/2020-10-22-blogtutorial/teaser.jpeg
+read_time: true
+author_profile: true
+toc: true
+share: true
+comments: true
+---
+```
+
+**`layout`** is the template of your page, for post `single` layout is the most appropriate. *[See all layouts](https://mmistakes.github.io/minimal-mistakes/docs/layouts/)*
+
+**`author_profile`** display the side bar with author informations. 
+
+:bulb: Remember all images and ressources you want to include must be save in the `assets` folder in the root of your project directory.
 # Step 5: Blog structure
