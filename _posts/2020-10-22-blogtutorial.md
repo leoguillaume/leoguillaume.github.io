@@ -22,7 +22,7 @@ Creating a blog, like any website, it generaly goes with writing scripts in HTML
 
 > *"Hosted directly from your GitHub repository. Just edit, push, and your changes are live."*
 
-This is how Github Pages defines it. Github Pages is a feature of Github that allows to host a website from a Github repository, on *github_username.github.io* url. Storage space is limited but more than enough for a blog and Github Pages has two major advantages: hosting is free and works on the basis of a Github repository. The changes you push on your repository will be displayed on your site, which is really handy!
+Github Pages is a feature of Github that allows to host a website from a Github repository, on *github_username.github.io* url. Storage space is limited but more than enough for a blog and Github Pages has two major advantages: hosting is free and works on the basis of a Github repository. The changes you push on your repository will be displayed on your site, which is really handy!
 
 * **[Jekyll](https://jekyllrb.com/)**
 
@@ -203,7 +203,12 @@ comments: true
 
 **`layout`** is the template of your page, for post `single` layout is the most appropriate. *[See all layouts](https://mmistakes.github.io/minimal-mistakes/docs/layouts/)*
 
-**`author_profile`** display the side bar with author informations. 
+**`author_profile`** display the side bar with author informations.
+
+**`toc`** display the table of contents.
+
+**`comments`** display a comment box at the end of your post. To active this feature you must modify the `Site Settingsk` block in the `_config.yml` file.  
+
 
 :bulb: Remember all images and ressources you want to include must be save in the `assets` folder in the root of your project directory.
 # Step 5: Blog structure
