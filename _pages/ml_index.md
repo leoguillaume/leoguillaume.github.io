@@ -1,8 +1,7 @@
 ---
 layout: category
 title: "Machine Learning"
-permalink: /posts/machine-learning/
-taxonomy: machine learning
+permalink: /posts/#machine-learning
 values:
       author_profile: true
 ---
