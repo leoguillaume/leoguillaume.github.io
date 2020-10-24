@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "Posts"
-permalink: /categories
+permalink: /categories/
 author_profile: true
 breadcrumbs: true
 gallery:

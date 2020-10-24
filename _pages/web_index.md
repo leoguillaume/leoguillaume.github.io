@@ -1,7 +1,7 @@
 ---
 layout: category
 title: "Web"
-permalink: /categories/#web
+permalink: /categories/#web/
 values:
       author_profile: true
 ---
