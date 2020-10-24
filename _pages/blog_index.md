@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: categories
 title: "Posts"
 permalink: /categories/
 author_profile: true

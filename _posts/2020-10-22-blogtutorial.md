@@ -6,7 +6,6 @@ header:
     teaser: https://leoguillaume.github.io/assets/images/2020-10-22-blogtutorial/teaser.jpg
 categories:
   - web
-
 read_time: true
 author_profile: true
 toc: true
