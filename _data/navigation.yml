@@ -1,7 +1,7 @@
 # main links
 main:
   - title: 'Blog'
-    url: /posts/
+    url: /categories/
   - title: 'Portfolio'
     url: /projects/
   - title: 'Curriculum'
