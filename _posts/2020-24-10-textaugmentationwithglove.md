@@ -3,7 +3,7 @@ layout: single
 title: "Text augmentation with Glove"
 excerpt: "A use case of text augmentation with word embeddings of Glove"
 categories:
-  - web
+  - nlp
 header:
     teaser: https://leoguillaume.github.io/assets/images/2020-10-24-textaugmentationwithglove/teaser.jpg
 read_time: true

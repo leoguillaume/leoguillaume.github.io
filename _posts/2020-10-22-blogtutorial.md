@@ -9,6 +9,9 @@ header:
 read_time: true
 author_profile: true
 toc: true
+tags:
+  - github
+  - jekyll
 share: true
 comments: true
 ---
@@ -38,19 +41,19 @@ Now, let's get to the heart of the matter!
 
 The first step is to create a new Github repository. The repository must have *github_username.github.io* as its name.
 
-![image](https://leoguillaume.github.io/assets/images/2020-22-10-blogtutorial/screenshot-1.png){:height="60%" width="60%"}
+![image](https://leoguillaume.github.io/assets/images/2020-10-22-blogtutorial/screenshot-1.png){:height="60%" width="60%"}
 
 Then import [Minimal Mistake repository](https://github.com/mmistakes/minimal-mistakes) on you new repo (copy the url and add .git at the end).
 
-![image](https://leoguillaume.github.io/assets/images/2020-22-10-blogtutorial/screenshot-2.png)
+![image](https://leoguillaume.github.io/assets/images/2020-10-22-blogtutorial/screenshot-2.png)
 
 :bulb: Remember to change the default branch to the master branch.
 
-![image](https://leoguillaume.github.io/assets/images/2020-22-10-blogtutorial/screenshot-3.png){:height="50%" width="50%"}
+![image](https://leoguillaume.github.io/assets/images/2020-10-22-blogtutorial/screenshot-3.png){:height="50%" width="50%"}
 
 Now you can load your blog on any web browser (it can take few minutes). Congratulations, you have just put your blog online :tada:!
 
-![image](https://leoguillaume.github.io/assets/images/2020-22-10-blogtutorial/screenshot-4.png)
+![image](https://leoguillaume.github.io/assets/images/2020-10-22-blogtutorial/screenshot-4.png)
 
 Great, but there's nothing on it yet. Now we're going to edit some files to give it a more personal touch.
 
@@ -293,3 +296,5 @@ Save the modifications and push them on Github :rocket:! Well done, you have now
 The reader must be warned that this document is not exhaustive and that Jekyll and Minimal Mistakes offer many other possibilities. All of them are easily modifiable and there are a lot of features to be discovered. Feel free to explore the documentations to explore all the possibilities and make your blog more personal:
 - [Jekyll documentation](https://jekyllrb.com/docs/)
 - [Minimale Mistakes documentations](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/)
+
+Ps: feel free to fork also the [repo of this blog](https://github.com/leoguillaume/leoguillaume.github.io) :grin:.
