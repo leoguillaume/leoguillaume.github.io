@@ -4,22 +4,23 @@ title: "Posts"
 permalink: /categories/
 author_profile: true
 breadcrumbs: true
+entries_layout: grid
 gallery:
-  - url: https://leoguillaume.github.io/posts/machine-learning
+  - url: https://leoguillaume.github.io/categories/#machine-learning
     image_path: /assets/images/machine-learning-logo.png
-    title: 'Machine Learning'
-  - url: https://leoguillaume.github.io/posts/nlp
+    title: 'Machine Learning posts'
+  - url: https://leoguillaume.github.io/categories/#nlp
     image_path: /assets/images/nlp-logo.png
-    title: 'NLP'
-  - url: https://leoguillaume.github.io/posts/deep-learning
+    title: 'Natural Language Processing posts'
+  - url: https://leoguillaume.github.io/categories/#deep-learning
     image_path: /assets/images/deep-learning-logo.png
-    title: 'Deep Learning'
-  - url: https://leoguillaume.github.io/posts/data-analysis
+    title: 'Deep Learning posts'
+  - url: https://leoguillaume.github.io/categories/#data-analysis
     image_path: /assets/images/data-analysis-logo.png
-    title: 'Data Analysis'
-  - url: https://leoguillaume.github.io/posts/web
+    title: 'Data Analysis posts'
+  - url: https://leoguillaume.github.io/categories/#web
     image_path: /assets/images/web-logo.png
-    title: 'Web'
+    title: 'Web posts'
 ---
 Find a post by category.
 
