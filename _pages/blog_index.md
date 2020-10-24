@@ -1,5 +1,5 @@
 ---
-layout: categories
+layout: custom_categories
 title: "Posts"
 permalink: /categories/
 author_profile: true
