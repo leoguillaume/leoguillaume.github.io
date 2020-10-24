@@ -2,10 +2,10 @@
 layout: single
 title: "Text augmentation with Glove"
 excerpt: "A use case of text augmentation with word embeddings of Glove"
-categories:
-  - nlp
 header:
     teaser: https://leoguillaume.github.io/assets/images/2020-10-24-textaugmentationwithglove/teaser.jpg
+categories:
+  - nlp
 read_time: true
 author_profile: true
 toc: true
@@ -177,4 +177,4 @@ print(classification_report(y_test_a, y_pred_a))
 
 ![image](https://leoguillaume.github.io/assets/images/2020-10-24-textaugmentationwithglove/screenshot-2.png)
 
-The new prediction on minority class is better by 3% :rocket:. It's likely that a bit of overfitting contributes to this increase because we have only replaced the names, but it gives an example of the application of data augmentation with Glove.
+The new prediction on minority class is better by 3% :rocket:. It's likely that a bit of overfitting contributes to this increase because we have only replaced the names, but it just gives an example of the application of data augmentation with Glove.

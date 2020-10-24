@@ -2,10 +2,11 @@
 layout: single
 title: "How build a blog in few minutes for free ?"
 excerpt: "A tutorial to build a blog with Github Pages, Jekyll and Minimal Mistakes template"
+header:
+    teaser: https://leoguillaume.github.io/assets/images/2020-10-22-blogtutorial/teaser.jpg
 categories:
   - web
-header:
-    teaser: https://leoguillaume.github.io/assets/images/2020-10-22-blogtutorial/teaser.jpeg
+
 read_time: true
 author_profile: true
 toc: true
