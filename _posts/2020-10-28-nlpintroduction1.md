@@ -1,7 +1,7 @@
 ---
 layout: single
-title: “[Fr] Introduction au NLP #1"
-excerpt: “Prétraitement du texte"
+title: [Fr] Introduction au NLP \#1
+excerpt: “Prétraitement de données textuelles"
 categories:
  - nlp
 header:
@@ -50,7 +50,7 @@ NB: nous utiliserons ici des exemples en anglais puisque ces librairies étant i
 
 ## NLTK
 
-```bash
+```console
 pip install nltk
 ```
 
@@ -63,7 +63,7 @@ document = "I'm in the kitchen. Bryan is joining me."
 tokens = document.split(' ')
 print(tokens)
 ```
-Output:
-```bash
+
+`Output` ```console
 ["I'm", 'in', 'the', 'kitchen.', 'Bryan', 'is', 'joining', 'me.']
 ```
