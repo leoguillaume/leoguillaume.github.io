@@ -6,6 +6,4 @@ Icons from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.co
 - <a href="https://www.flaticon.com/authors/ultimatearm" title="ultimatearm">ultimatearm</a>
 - <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a>
 - <a href="https://www.flaticon.com/authors/phatplus" title="phatplus">phatplus</a>
-- <a href="https://www.flaticon.com/authors/ultimatearm" title="ultimatearm">ultimatearm</a>
 - <a href="https://www.flaticon.com/authors/becris" title="Becris">Becris</a>
-- <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a>
