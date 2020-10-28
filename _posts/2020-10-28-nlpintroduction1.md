@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[Fr] Introduction au NLP \#1"
+title: "[Fr] Introduction au NLP - part.1"
 excerpt: “Prétraitement de données textuelles"
 categories:
  - nlp
