@@ -245,50 +245,86 @@ Great we have a homepage with a welcome message and a list of your posts, now we
 
 Organising the structure of your blog is very simple with Jekyll. In the `_data` directory, you'll find a `navigation.yml` file that will modifies the navigation tabs.
 
-You'll can customize like this:
+You'll create three tabs:
+- a "blog" tab with posts by categories
+- a "portfolio" tab with a project gallery
+- a "curriculum" tab with a resume
+
+### The blog tag
+
+Go in your first post and click on the "web" category below your post.
+
+![image](https://leoguillaume.github.io/assets/images/2020-10-22-blogtutorial/screenshot-5.png){:height="120%" width="120%"}
+
+This will take you to the following url:
+
+![image](https://leoguillaume.github.io/assets/images/2020-10-22-blogtutorial/screenshot-5.png){:height="120%" width="120%"}
+
+You will therefore return the blog tab to the `categories` page which does not yet exist.
+
+You'll modify the `navigation.yml` file like this:
 ```yml
 main:
   - title: 'Blog'
-    url: /posts/
+    url: /categories/
+```
+
+### The portfolio tag
+
+In the next section we'll create a "projects" page to display the gallery of your project.
+
+```yml
+main:
+  - title: 'Blog'
+    url: /categories/
+  - title: 'Portfolio'
+    url: /projects/
+```
+
+### The curriculum tag
+
+The *Curriculum* tabs leads directly to the resume in PDF, storage in the assets folder.
+
+```yml
+main:
+  - title: 'Blog'
+    url: /categories/
   - title: 'Portfolio'
     url: /projects/
   - title: 'Curriculum'
     url: /assets/pdf/resume2020.pdf
 ```
-The *Curriculum* tabs leads directly to the resume in PDF.
 
 ## Pages
 
 You have created navigation tabs which leads to urls, now you have to build pages of these urls. The way of adding a page is to add an HTLM or Markdown files in the `_pages` directory.
 
-For example to create a index page which leads posts by category, you have to create a page file with `archive` layout. Each `archive` (gallery) box leads to a url. For the moment, we have only one post, in "web" category.
+To create a index page which leads posts by category, you have to create a Markdown file with `catogories` layout, like this:
 
 ```yml
 ---
-layout: archive
-title: "Posts"
-permalink: /posts/
+layout: categories
+title: "Posts by category"
+permalink: /categories/
 author_profile: true
-breadcrumbs: true
-gallery:
-  - url: https://leoguillaume.github.io/posts/web
-    image_path: /assets/images/web-logo.png
-    title: 'Web'
 ---
 ```
 
-Then you have to create a page in `_pages` for each category with the corresponding taxonomy tag.
+To create the portfolio page, you can copy the code below which generate a gallery of posts in the "project" category.
 
-For exemple `web_index.md`:
 ```yml
+layout: archive
+title: "Portfolio and projects"
+permalink: /projects/
+author_profile: true
 ---
-layout: category
-title: "Web"
-permalink: /posts/web/
-taxonomy: web
-values:
-      author_profile: true
----
+<div class="grid__wrapper">
+    {% for post in site.posts %}
+        {% if post.categories contains 'project' %}
+            {% include archive-single.html type="grid" %}
+        {% endif %}
+    {% endfor %}
+</div>
 ```
 
 Save the modifications and push them on Github :rocket:! Well done, you have now everything you need to create your blog.

@@ -3,7 +3,6 @@ layout: custom_categories
 title: "Posts"
 permalink: /categories/
 author_profile: true
-breadcrumbs: true
 gallery:
   - url: https://leoguillaume.github.io/categories/#machine-learning
     image_path: /assets/images/machine-learning-logo.png
