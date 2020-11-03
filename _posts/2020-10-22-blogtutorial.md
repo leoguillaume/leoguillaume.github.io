@@ -250,9 +250,9 @@ You'll create three tabs:
 - a "portfolio" tab with a project gallery
 - a "curriculum" tab with a resume
 
-### The blog tag
+### The blog tab
 
-Go in your first post and click on the "web" category below your post.
+Go in your first post and click on the *web* category below your post.
 
 ![image](https://leoguillaume.github.io/assets/images/2020-10-22-blogtutorial/screenshot-5.png)
 
@@ -260,7 +260,7 @@ This will take you to the following url:
 
 ![image](https://leoguillaume.github.io/assets/images/2020-10-22-blogtutorial/screenshot-6.png)
 
-You will therefore return the blog tab to the `categories` page which does not yet exist.
+You will therefore return the blog tab to the *categories* page which does not yet exist.
 
 You'll modify the `navigation.yml` file like this:
 ```yml
@@ -269,9 +269,9 @@ main:
     url: /categories/
 ```
 
-### The portfolio tag
+### The portfolio tab
 
-In the next section we'll create a "projects" page to display the gallery of your project.
+In the next section we'll create a *projects* page to display the gallery of your project.
 
 ```yml
 main:
@@ -281,9 +281,9 @@ main:
     url: /projects/
 ```
 
-### The curriculum tag
+### The curriculum tab
 
-The *Curriculum* tabs leads directly to the resume in PDF, storage in the assets folder.
+The *curriculum* tab leads directly to the resume in PDF, storage in the assets folder.
 
 ```yml
 main:
@@ -299,7 +299,7 @@ main:
 
 You have created navigation tabs which leads to urls, now you have to build pages of these urls. The way of adding a page is to add an HTLM or Markdown files in the `_pages` directory.
 
-To create a index page which leads posts by category, you have to create a Markdown file with `catogories` layout, like this:
+To create a index page which leads posts by category, you have to create a Markdown file with `categories` layout, like this:
 
 ```yml
 ---
@@ -310,9 +310,9 @@ author_profile: true
 ---
 ```
 
-To create the portfolio page, you can copy the code below which generate a gallery of posts in the "project" category.
+To create the portfolio page, you can copy the code below which generate a gallery of posts in the *project* category.
 
-```yml
+```
 layout: archive
 title: "Portfolio and projects"
 permalink: /projects/
