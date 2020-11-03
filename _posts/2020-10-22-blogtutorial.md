@@ -254,11 +254,11 @@ You'll create three tabs:
 
 Go in your first post and click on the "web" category below your post.
 
-![image](https://leoguillaume.github.io/assets/images/2020-10-22-blogtutorial/screenshot-5.png){:height="120%" width="120%"}
+![image](https://leoguillaume.github.io/assets/images/2020-10-22-blogtutorial/screenshot-5.png)
 
 This will take you to the following url:
 
-![image](https://leoguillaume.github.io/assets/images/2020-10-22-blogtutorial/screenshot-5.png){:height="120%" width="120%"}
+![image](https://leoguillaume.github.io/assets/images/2020-10-22-blogtutorial/screenshot-6.png)
 
 You will therefore return the blog tab to the `categories` page which does not yet exist.
 
