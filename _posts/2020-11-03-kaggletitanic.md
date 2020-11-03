@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "All ML steps with Scikit-learn pipelines"
-excerpt: "Kaggle challeng about the Titanic disaster"
+excerpt: "Kaggle challenge about the Titanic disaster"
 header:
     teaser: https://leoguillaume.github.io/assets/images/2020-11-03-kaggletitanic/teaser.jpg
 categories:
