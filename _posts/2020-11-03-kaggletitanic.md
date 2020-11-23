@@ -8,7 +8,6 @@ categories:
   - project
 read_time: true
 author_profile: true
-toc: true
 tags:
   - kaggle
   - pipeline
