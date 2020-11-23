@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "How to bulk download images from a facebook messenger chat ?"
-excerpt: ""Facebook messenger photos scraper"
+excerpt: "Facebook messenger photos scraper"
 header:
     teaser: https://leoguillaume.github.io/assets/images/2020-11-23-messengerscraper/teaser.jpg
 categories:
